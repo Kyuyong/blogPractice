@@ -1,0 +1,28 @@
+@use "../../app.scss";
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  // background-color: #f5f5f5;
+
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .MuiTextField-root {
+    margin-bottom: 16px;
+  }
+
+  // .input form {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 16px; /* 간격 설정 */
+  // }
+}

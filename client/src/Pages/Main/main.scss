@@ -1,0 +1,38 @@
+@use "../../app.scss";
+
+.main {
+  .container {
+    width: 1200px;
+    margin: auto;
+
+    .mainNavbar {
+      // position: fixed;
+      // top : 0;
+      // left: 0;
+      // right : 0;
+      // background-color: transparent;
+      background-color: #bebebe;
+      height: 70px;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .mainContents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: app.$linear;
+    height: 500px;
+
+    .left {
+      flex: 1;
+      color: white;
+    }
+    .right {
+      flex: 1;
+      color: white;
+    }
+  }
+}

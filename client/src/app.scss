@@ -1,0 +1,50 @@
+$blueColor: #5395d1;
+$redColor: #ef0000;
+$hotpinkColor: #DD1B8F;
+$purpleColr: rgb(119, 47, 201);
+$whitegrayColor: #b7b7b7;
+$grayColor: #5a5a5a;
+$whiteYellow: #F6DDD0;
+$pastelGreen: #79CAB6;
+$pastelViolet: #AFACD7;
+$linear: linear-gradient(100deg, rgb(41, 162, 208) 0%, rgb(119, 47, 201) 100%);
+$prductLinear: linear-gradient(100deg, #4CC5F2 0%, #1CA8DB 100%);
+$notoSans: "Noto Sans KR", Helvetica, sans-serif;
+$main-dark : #2a3447;
+$soft-dark : #384256;
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+/* ======== gap 정의 ======== */
+.gap-100 {
+  clear: both;
+  height: 100px;
+}
+
+.gap-80 {
+  clear: both;
+  height: 80px;
+}
+
+.gap-60 {
+  clear: both;
+  height: 60px;
+}
+
+.gap-40 {
+  clear: both;
+  height: 40px;
+}
+
+.gap-30 {
+  clear: both;
+  height: 30px;
+}
+
+.gap-20 {
+  clear: both;
+  height: 20px;
+}
