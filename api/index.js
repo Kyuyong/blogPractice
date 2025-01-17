@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 
 import { loginOpark } from "./opark.js";
+import userRoutes from "./routes/users.js";
 
 const app = express();
 
@@ -52,6 +53,9 @@ app.post("/api/login", async (req, res) => {
       .json({ success: false, message: "로그인 실패", error: error.message });
   }
 });
+
+// api routers 가져오기
+app.use("/api/getusers", userRoutes);
 
 // 서버 시작
 const PORT = 3001;

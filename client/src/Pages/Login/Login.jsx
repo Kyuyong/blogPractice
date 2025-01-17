@@ -3,18 +3,21 @@ import { Box, Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { login } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log("전송 데이터:", { username, password }); // 디버깅용 로그
     try {
       await login({ username, password }); // ✅ 올바른 호출
-      console.log("로그인 요청 완료");
+      // console.log("로그인 요청 완료");
+      navigate("/"); // ✅ 로그인 성공 시
     } catch (error) {
       console.error("로그인 실패:", error.message);
     }
